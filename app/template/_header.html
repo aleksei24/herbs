@@ -1,32 +1,39 @@
 <header class="header">
     <div class="header__container container">
+        <a href="./index.html" class="header__logo logo icon-logo"> logo </a>
         <nav class="header__nav nav">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="./index.html" class="nav__link"> Home </a>
+                    <a href="#!" class="nav__link"> Каталог </a>
                 </li>
                 <li class="nav__item">
-                    <a href="./catalogue.html" class="nav__link"> Shop </a>
+                    <a href="#!" class="nav__link"> Это интересно </a>
                 </li>
                 <li class="nav__item">
-                    <a href="./card.html" class="nav__link"> Elements </a>
+                    <a href="#!" class="nav__link"> Новости </a>
                 </li>
                 <li class="nav__item">
-                    <a href="tools.html" class="nav__link"> tools </a>
+                    <a href="#!" class="nav__link"> Вопрос-ответ </a>
                 </li>
                 <li class="nav__item">
-                    <a href="grid.html" class="nav__link"> Grid </a>
+                    <a href="#!" class="nav__link"> Специалистам </a>
                 </li>
                 <li class="nav__item">
-                    <a href="#!" class="nav__link"> Page </a>
+                    <a href="#!" class="nav__link"> Где купить </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#!" class="nav__link"> Контакты </a>
                 </li>
             </ul>
         </nav>
         @@include('../template/_burger.html')
-        <a href="./index.html" class="header__logo logo icon-logo"> logo </a>
-        <ul class="header__shop-menu shop-menu">
-            <li class="shop-menu__item shop-menu__item_search">
-                <form action="#" class="shop-menu__search search">
+
+        <ul class="header__aux aux">
+            <li class="aux__item">
+                <a href="#!" class="aux__link"> 8 (495) 969-21-84 </a>
+            </li>
+            <li class="aux__item aux__item_search">
+                <form action="#" class="aux__search search">
                     <label for="search-btn"></label>
                     <input
                         type="search"
@@ -37,16 +44,6 @@
                         placeholder="Search..."
                     />
                 </form>
-            </li>
-            <li class="shop-menu__item">
-                <a href="#!" class="shop-menu__link">
-                    <img src="./img/icons/user.png" alt="user" />
-                </a>
-            </li>
-            <li class="shop-menu__item">
-                <a href="#!" class="shop-menu__link cart ibg">
-                    <span class="cart__num num">3</span>
-                </a>
             </li>
         </ul>
     </div>

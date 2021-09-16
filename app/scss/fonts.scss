@@ -8,7 +8,9 @@
     }
 }
 
-@include font('Varela', 'Varela-Regular', '400', 'normal');
-@include font('Salsa', 'Salsa-Regular', '400', 'normal');
+@include font('Medium', 'PH Handbook Pro Medium', '400', 'normal');
+@include font('Light', 'PH Handbook Pro Light', '300', 'normal');
+@include font('Bold', 'PH Handbook Pro Bold', '700', 'normal');
+@include font('Thin', 'PH Handbook Pro Thin', '100', 'normal');
 
 // don't forget to restart, if another font has been put
