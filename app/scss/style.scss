@@ -1,11 +1,11 @@
 @import 'fonts';
-@import 'icofonts';
+// @import 'icofonts';
 @import 'default';
 @import 'mixins';
 @import 'burger';
 @import 'header';
 @import 'header-grid';
-@import 'swiper';
+// @import 'swiper';
 // @import 'animate';
 @import 'fullscreen';
 @import 'hero';
@@ -45,3 +45,5 @@
 @import 'footer-2';
 @import 'own-counter';
 @import 'main-grid';
+
+@import './node_modules/swiper/swiper.scss';

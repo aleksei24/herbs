@@ -1,6 +1,8 @@
 <header class="header">
     <div class="header__container container">
-        <a href="./index.html" class="header__logo logo icon-logo"> logo </a>
+        <a href="#!" class="header__logo logo">
+            <img src="img/logo/logo.svg" alt="logo" />
+        </a>
         <nav class="header__nav nav">
             <ul class="nav__list">
                 <li class="nav__item">
@@ -27,22 +29,23 @@
             </ul>
         </nav>
         @@include('../template/_burger.html')
-
         <ul class="header__aux aux">
             <li class="aux__item">
                 <a href="#!" class="aux__link"> 8 (495) 969-21-84 </a>
             </li>
-            <li class="aux__item aux__item_search">
-                <form action="#" class="aux__search search">
-                    <label for="search-btn"></label>
+            <li class="aux__item">
+                <form action="#" class="aux__search search-aux">
+                    <label for="input-text"></label>
                     <input
-                        type="search"
-                        title="search"
-                        name="search-btn"
-                        class="search__btn ibg"
-                        id="search-btn"
-                        placeholder="Search..."
+                        type="text"
+                        title="text"
+                        name="input-text"
+                        class="search-aux__input"
+                        placeholder=""
                     />
+                    <button type="button" class="search-aux__btn">
+                        <img src="img/icons/search.png" alt="search" />
+                    </button>
                 </form>
             </li>
         </ul>

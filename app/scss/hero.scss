@@ -1,5 +1,4 @@
 .hero {
-    height: 100vh;
     min-height: 600px;
     position: relative;
     // margin-top: 200px;
@@ -13,10 +12,10 @@
 
     &__container {
         margin: 0 auto;
-        padding: 10px;
-        width: $indexSliderWidth;
+        padding: 0 10px;
+        max-width: $indexSliderWidth;
+        height: 764px;
         position: relative;
-        height: 100vh;
         // border: 1px solid $colourFont;
         @media (max-width: $indexSliderWidth) {
             width: 100%;
@@ -25,23 +24,11 @@
 
     &__content {
         position: relative;
+        height: 764px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        // width: 1300px;
-        height: 100vh;
-        @media (max-width: $md3) {
-            justify-content: flex-start;
-            padding-top: 20%;
-        }
-        @media (max-width: $md4) {
-            align-items: center;
-            padding-top: 25%;
-        }
-        @media (max-width: $md5) {
-            padding-top: 50%;
-        }
     }
 
     &__title {
@@ -92,4 +79,21 @@
             right: 0;
         }
     }
+}
+
+.swiper-wrapper {
+    height: 764px;
+}
+.parallax-bg {
+    height: 764px;
+    background-image: url(../img/hero/bg.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
 }

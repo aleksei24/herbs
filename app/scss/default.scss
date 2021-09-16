@@ -14,12 +14,12 @@ $md5: 768px;
 $md6: 375px;
 $md7: 320px;
 
-$indexSliderWidth: 1200px;
+$indexSliderWidth: $maxWidth;
 $catalogSliderWidth: 1200px;
 
-$bgColour: #ffffff;
+$bgColour: rgba(255, 255, 255, 0.82);
 $popupBg: rgb(202, 202, 202);
-$colourFont: #151515;
+$colourFont: #333333;
 $btnColour: rgb(211, 211, 211);
 $btnBgColour: rgb(255, 123, 0);
 $headerFixed: rgba(216, 216, 216, 0.7);
@@ -48,6 +48,7 @@ body {
     font-size: 16px;
     background-color: $bgColour;
     font-family: $fontFamily;
+    color: $colourFont;
     &.lock {
         overflow: hidden;
     }
@@ -110,13 +111,13 @@ button {
     margin: 0 auto;
     background-color: $bgColour;
 }
-.wrapper-grid {
-    min-height: 100%;
-    display: -ms-grid;
-    display: grid;
-    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
-    grid-template-areas: 'header-grid' 'main-grid' 'footer-grid';
-}
+// .wrapper-grid {
+//     min-height: 100%;
+//     display: -ms-grid;
+//     display: grid;
+//     grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+//     grid-template-areas: 'header-grid' 'main-grid' 'footer-grid';
+// }
 .container {
     max-width: $contWidth;
     width: 100%;
