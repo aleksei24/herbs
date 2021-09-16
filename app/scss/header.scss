@@ -1,0 +1,131 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.8s ease;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @media (max-width: $md2) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        font-size: 0;
+    }
+
+    &__shop-menu {
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        width: 100%;
+        @media (max-width: $md5) {
+            display: none;
+        }
+    }
+
+    &_fixed {
+        position: fixed;
+        top: -40px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: $headerFixed;
+    }
+    &_top {
+        margin-top: 40px;
+    }
+}
+
+.nav {
+    @media (max-width: $md4) {
+        display: none;
+    }
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
+        @media (max-width: $md2) {
+            margin-right: 30px;
+        }
+    }
+
+    &__link {
+        position: relative;
+        &:hover {
+            border-bottom: 3px solid $colourFont;
+        }
+    }
+}
+
+.shop-menu {
+    &__item {
+        width: 20px;
+        margin-right: 20px;
+        &_search {
+            max-width: 200px;
+            width: 100%;
+            @media (max-width: $md3) {
+                max-width: 100px;
+            }
+        }
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+    }
+}
+.search {
+    &__btn {
+        background-image: url(../img/icons/search.png);
+        max-width: 20px;
+        width: 100%;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+    &__btn:hover {
+        outline: none;
+        max-width: 200px;
+        width: 100%;
+        border-bottom: 1px solid black;
+        background-size: 0%;
+    }
+}
+.cart {
+    display: inline-flex;
+    align-items: center;
+    background-image: url(../img/icons/cart.png);
+    width: 30px;
+    height: 30px;
+
+    &__num {
+        position: absolute;
+        right: -20px;
+        top: 0;
+    }
+}
+
+.num {
+    background-color: $btnBgColour;
+    color: $colourFont;
+    padding: 0 7px;
+    border-radius: 20px;
+    &_transp {
+        background-color: $transparentColour;
+        border: 1px solid $colourFont;
+    }
+}
