@@ -1,9 +1,10 @@
 // Swiper
-const indexSwiper = new Swiper('.index-swiper', {
+const indexSwiper = new Swiper('.hero-swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
     speed: 1000,
+    parallax: true,
 
     // Navigation arrows
     /*navigation: {
