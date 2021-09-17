@@ -113,13 +113,26 @@
     z-index: 10;
     line-height: 32px;
     font-size: 18px;
-    color: $colourFont;
+    transition: 0.5s;
 }
 .swiper-pagination-bullet {
+    color: $colourFont;
     opacity: 1;
 }
 .swiper-pagination-bullet-active {
     color: #fff;
     background-color: #50daf5;
-    border-radius: 50%;
+    border-radius: 13px;
+    transform: scale(1.25);
+    clip-path: polygon(
+        33% 9%,
+        86% 41%,
+        91% 49%,
+        88% 57%,
+        34% 91%,
+        23% 91%,
+        16% 86%,
+        16% 14%,
+        24% 9%
+    );
 }
