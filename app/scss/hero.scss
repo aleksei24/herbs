@@ -121,18 +121,19 @@
 }
 .swiper-pagination-bullet-active {
     color: #fff;
-    background-color: #50daf5;
-    border-radius: 13px;
-    transform: scale(1.25);
-    clip-path: polygon(
-        33% 9%,
-        86% 41%,
-        91% 49%,
-        88% 57%,
-        34% 91%,
-        23% 91%,
-        16% 86%,
-        16% 14%,
-        24% 9%
-    );
+    background-image: url(../img/hero/page.png);
+    // background-color: #50daf5;
+    // border-radius: 13px;
+    transform: scale(1.05);
+    // clip-path: polygon(
+    //     33% 9%,
+    //     86% 41%,
+    //     91% 49%,
+    //     88% 57%,
+    //     34% 91%,
+    //     23% 91%,
+    //     16% 86%,
+    //     16% 14%,
+    //     24% 9%
+    // );
 }
