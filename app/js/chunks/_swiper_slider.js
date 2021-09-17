@@ -13,13 +13,13 @@ const indexSwiper = new Swiper('.hero-swiper', {
     },*/
 
     // autoplay
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
 
     // pagination
     pagination: {
-        el: '.swiper-pagination',
+        el: '.hero-swiper-pagination',
         type: 'bullets',
     },
 });

@@ -12,7 +12,7 @@
 
     &__container {
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 0;
         max-width: $indexSliderWidth;
         height: 764px;
         position: relative;
@@ -26,57 +26,55 @@
         position: relative;
         height: 764px;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+    }
+}
+
+.content-hero {
+    &__descript {
+        margin-left: 190px;
     }
 
-    &__title {
-        font-family: $secondFont;
-        @include response-font(70, 18);
-        font-weight: 700;
-        max-width: 500px;
-        margin-bottom: 30px;
-
-        @media (max-width: $md3) {
-            max-width: 40%;
-            z-index: 2;
-        }
-        @media (max-width: $md4) {
-            max-width: 90%;
-        }
-    }
-
-    &__dscr {
-        @include response-font(21, 11);
-        line-height: 27/21 * 100%;
-        max-width: 450px;
-        min-height: 80px;
-        overflow: hidden;
-        max-height: 190px;
-
-        @media (max-width: $md3) {
-            max-width: 40%;
-            z-index: 2;
-        }
-        @media (max-width: $md4) {
-            max-width: 90%;
-        }
-    }
-
-    &__pic {
+    &__img {
         position: absolute;
         right: 0;
         bottom: 0;
         max-height: 100%;
         max-width: 100%;
-        @media (max-width: $md2) {
-            max-width: 55%;
-            right: 50px;
-        }
-        @media (max-width: $md3) {
-            max-width: 100%;
-            right: 0;
+    }
+}
+.context-hero {
+    &__title {
+        font-family: $forthFont;
+        font-size: 72px;
+        line-height: 70/72 * 100%;
+        font-weight: 100;
+        max-width: 780px;
+        width: 590px;
+        margin-bottom: 42px;
+    }
+
+    &__text {
+        @include response-font(28, 16);
+        line-height: 36/28 * 100%;
+        font-family: $secondFont;
+        font-weight: 300;
+        max-width: 585px;
+        min-height: 72px;
+        overflow: auto;
+        max-height: 190px;
+        margin-bottom: 42px;
+    }
+
+    &__btn {
+        width: 186px;
+        height: 60px;
+        span {
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 24/16 * 100%;
+            font-weight: 500;
         }
     }
 }
@@ -85,15 +83,35 @@
     height: 764px;
 }
 .parallax-bg {
-    height: 764px;
+    // height: 764px;
     background-image: url(../img/hero/bg.png);
     background-repeat: no-repeat;
     position: absolute;
     left: 0;
     top: 0;
-    width: 130%;
+    width: 170%;
     height: 100%;
-
     background-size: cover;
     background-position: center;
+}
+.hero-swiper-pagination {
+    bottom: 120px;
+    display: flex;
+    align-items: flex-start;
+}
+.swiper-pagination-bullets {
+}
+.hero-swiper-bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+.swiper-pagination-bullet {
+    height: 60px;
+    width: 60px;
+    color: $colourFont;
+}
+.swiper-pagination-bullet-active {
+    background-color: aqua;
 }
