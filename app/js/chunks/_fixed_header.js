@@ -1,6 +1,6 @@
 // fixed menu
 const header = document.querySelector('.header');
-const headerTop = document.querySelector('.header_top');
+// const headerTop = document.querySelector('.header_top');
 
 if (header) {
     window.onscroll = function () {
@@ -8,11 +8,11 @@ if (header) {
     };
 }
 
-if (headerTop) {
-    header.style.top = -40;
-} else {
-    header.style.top = 0;
-}
+// if (headerTop) {
+//     header.style.top = -40;
+// } else {
+//     header.style.top = 0;
+// }
 
 function fixedHeader() {
     if (window.pageYOffset >= 50) {

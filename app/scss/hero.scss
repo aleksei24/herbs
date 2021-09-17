@@ -83,6 +83,9 @@
 .swiper-wrapper {
     height: 764px;
 }
+.swiper-container {
+    height: inherit;
+}
 .parallax-bg {
     // height: 764px;
     background-image: url(../img/hero/bg.png);
@@ -90,7 +93,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 170%;
+    width: 130%;
     height: 100%;
     background-size: cover;
     background-position: center;
