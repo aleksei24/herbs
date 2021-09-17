@@ -3,7 +3,7 @@ const indexSwiper = new Swiper('.hero-swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    speed: 1000,
+    speed: 1500,
     parallax: true,
 
     // Navigation arrows
@@ -19,8 +19,11 @@ const indexSwiper = new Swiper('.hero-swiper', {
 
     // pagination
     pagination: {
-        el: '.hero-swiper-pagination',
-        type: 'bullets',
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + ('0' + (index + 1)) + '</span>';
+        },
     },
 });
 

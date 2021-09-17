@@ -4,7 +4,8 @@
 @import 'mixins';
 @import 'burger';
 @import 'header';
-@import 'header-grid';
+@import './node_modules/swiper/swiper.scss';
+// @import 'header-grid';
 // @import 'swiper';
 // @import 'animate';
 @import 'fullscreen';
@@ -41,9 +42,7 @@
 @import 'flex';
 // @import 'select01';
 @import 'footer';
-@import 'footer-grid';
+// @import 'footer-grid';
 @import 'footer-2';
 @import 'own-counter';
 @import 'main-grid';
-
-@import './node_modules/swiper/swiper.scss';
