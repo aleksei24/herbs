@@ -15,7 +15,7 @@ if (header) {
 // }
 
 function fixedHeader() {
-    if (window.pageYOffset >= 50) {
+    if (window.pageYOffset >= 250) {
         header.classList.add('header_fixed');
     } else {
         header.classList.remove('header_fixed');
