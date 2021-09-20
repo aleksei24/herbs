@@ -17,9 +17,9 @@
         color: #fff;
         text-transform: uppercase;
     }
-    // &:hover {
-    //     background-color: red;
-    // }
+    &:focus {
+        background-color: $btnBgColour;
+    }
 }
 
 .show {
