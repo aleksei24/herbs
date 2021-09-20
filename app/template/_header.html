@@ -34,20 +34,22 @@
                 <a href="#!" class="aux__link"> 8 (495) 969-21-84 </a>
             </li>
             <li class="aux__item">
-                <form action="#" class="aux__search search-aux">
-                    <label for="input-text"></label>
-                    <input
-                        type="text"
-                        title="text"
-                        name="input-text"
-                        class="search-aux__input"
-                        placeholder=""
-                    />
-                    <button type="button" class="search-aux__btn">
-                        <img src="img/icons/search.png" alt="search" />
-                    </button>
-                </form>
+                <div class="search-aux__btn" id="search-field">
+                    <img src="img/icons/search.png" alt="search" />
+                </div>
             </li>
         </ul>
+        <form action="#" class="index-form" id="index-form">
+            <label for="search-input" class="index-form__label">Поиск по сайту:</label>
+            <input
+                type="text"
+                name="search-input"
+                class="index-form__input"
+                id="search-input"
+                placeholder="например, пробиотики"
+            />
+            <button type="button" class="index-form__btn btn">найти</button>
+            <div class="close-btn btn" id="close-form-btn"></div>
+        </form>
     </div>
 </header>

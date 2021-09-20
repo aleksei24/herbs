@@ -23,3 +23,4 @@
 @@include('./chunks/_up_to.js')
 @@include('./chunks/_show_more.js')
 @@include('./chunks/_aside.js')
+@@include('./chunks/_search-field.js')

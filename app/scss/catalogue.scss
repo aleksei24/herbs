@@ -5,8 +5,7 @@
         position: absolute;
         top: 105px;
         left: -104px;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        overflow: auto;
         transform: rotate(-90deg);
         padding: 36px 0;
         span {
