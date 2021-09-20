@@ -12,7 +12,7 @@ if (toTop) {
 }
 
 function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 4200 || document.documentElement.scrollTop > 4200) {
         toTop.classList.add('show');
     } else {
         toTop.classList.remove('show');

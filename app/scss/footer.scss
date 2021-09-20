@@ -9,10 +9,10 @@
         padding: 115px 0;
     }
 
-    &__subscribe {
-    }
     &__offer {
         max-width: 430px;
+        max-height: 72px;
+        overflow: auto;
         font-size: 19px;
         line-height: 24/19 * 100%;
         font-weight: 300;
@@ -80,22 +80,24 @@
     }
 }
 
-.footer__rights {
-    border-top: 1px solid $colourFont;
-    margin-top: 40px;
-}
-
-.rights__container {
+.rights-footer__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px;
-}
-
-.rights {
-    &__links a {
-        margin: 0 20px;
-        font-family: $secondFont;
-        @include response-font(15, 9);
+    padding-bottom: 114px;
+    span {
+        font-size: 16px;
+        line-height: 24/16 * 100%;
+        font-weight: 500;
     }
+}
+.rights-footer__copyright {
+    text-transform: uppercase;
+}
+.rights-footer__address {
+    color: rgba(255, 255, 255, 0.75);
+}
+.rights-footer__develop {
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
 }
