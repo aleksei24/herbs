@@ -1,0 +1,24 @@
+.partners {
+    margin-bottom: 109px;
+    &__container {
+        max-width: 100vw;
+    }
+
+    &__line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.line-partner {
+    &__img {
+        height: 186px;
+    }
+    &__img:hover {
+        transition: ease-in-out 0.4s;
+        transform: scale(0.8);
+    }
+}
+.swiper-wrapper-partners {
+    height: 186px;
+}

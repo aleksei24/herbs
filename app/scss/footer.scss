@@ -1,114 +1,95 @@
 .footer {
+    background-color: #565658;
+    color: #fff;
     &__container {
-        padding: 10px;
-        max-width: 1270px;
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-between;
-    }
-    &__column {
-        flex: 0 0 24%;
-        @media (max-width: $md4) {
-            flex: 0 0 49%;
-        }
-        @media (max-width: $md5) {
-            flex: 0 0 100%;
-            margin-bottom: 10px;
-        }
-        &:last-child {
-            flex: 0 0 48%;
-            @media (max-width: $md4) {
-                flex: 0 0 100%;
-                margin-top: 15px;
-            }
-            @media (max-width: $md5) {
-                margin-top: 0;
-            }
-        }
-    }
-
-    &__title {
-        text-transform: uppercase;
-        font-weight: 700;
-        @include response-font(18, 12);
-        line-height: 24/18 * 100%;
-    }
-
-    &__list {
-        margin-top: 20px;
-        @media (max-width: $md3) {
-            margin-top: 15px;
-        }
-    }
-
-    &__item {
-        margin: 10px 0;
-        @media (max-width: $md3) {
-            margin: 7px 0;
-        }
-    }
-
-    &__link {
-        @include response-font(15, 10);
+        padding: 115px 0;
     }
 
     &__subscribe {
-        margin-top: 50px;
-        border-bottom: 1px solid $colourFont;
-        @media (max-width: $md3) {
-            margin-top: 35px;
-        }
-        @media (max-width: $md4) {
-            margin-top: 25px;
-        }
     }
     &__offer {
-        margin: 20px 0;
-        @include response-font(16, 8);
+        max-width: 430px;
+        font-size: 19px;
+        line-height: 24/19 * 100%;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.75);
+        margin-bottom: 25px;
     }
     &__subscribe input[type='email'] {
-        width: 70%;
-        height: 40px;
-        background-color: $bgColour;
-        padding-left: 12px;
+        width: 421px;
+        height: 60px;
+        background-color: transparent;
+        padding-left: 14px;
         color: $colourFont;
-        @include response-font(15, 9);
-        line-height: 21/15 * 100%;
-        @media (max-width: $md3) {
-            width: 60%;
-        }
+        text-transform: uppercase;
+        @include response-font(16, 10);
+        line-height: 24/16 * 100%;
+        border: 1px solid #e0e0e0;
+        border-radius: 3px;
     }
     &__subscribe input[type='submit'] {
-        width: 29%;
-        height: 40px;
-        background-color: $transparentColour;
-        color: $colourFont;
+        width: 172px;
+        height: 60px;
+        background-color: #9b9b9c;
+        color: #fff;
         font-family: $secondFont;
         @include response-font(18, 12);
-        font-weight: 700;
+        font-weight: 500;
         text-transform: capitalize;
         letter-spacing: 1.4px;
+    }
+
+    &__links {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 735px;
+        width: 100%;
+    }
+}
+
+.links-footer {
+    li {
+        margin-bottom: 20px;
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 19/16 * 100%;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+.links-footer__three {
+    li {
+        margin-bottom: 4px;
+    }
+    .links-footer__link {
+        text-transform: capitalize;
+        font-size: 16px;
+        line-height: 24/16 * 100%;
+        font-weight: 300;
+    }
+    .links-footer__link_title {
+        text-transform: uppercase;
+        margin-bottom: 20px;
     }
 }
 
 .footer__rights {
     border-top: 1px solid $colourFont;
     margin-top: 40px;
-    @media (max-width: $md4) {
-        margin-top: 20px;
-    }
 }
 
 .rights__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1270px;
-    padding: 20px 10px;
-    @media (max-width: $md4) {
-        padding: 7px;
-    }
+    padding: 20px 0px;
 }
 
 .rights {
@@ -116,31 +97,5 @@
         margin: 0 20px;
         font-family: $secondFont;
         @include response-font(15, 9);
-        @media (max-width: $md4) {
-            margin: 0 10px;
-        }
-        @media (max-width: $md5) {
-            margin: 0 5px;
-        }
-    }
-}
-.social {
-    &__link {
-        margin: 0 15px;
-        @media (max-width: $md3) {
-            margin: 0 10px;
-        }
-        @media (max-width: $md5) {
-            margin: 0 5px;
-        }
-        img {
-            max-width: 32px;
-            @media (max-width: $md3) {
-                max-width: 26px;
-            }
-            @media (max-width: $md5) {
-                max-width: 15px;
-            }
-        }
     }
 }

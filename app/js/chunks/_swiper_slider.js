@@ -27,22 +27,23 @@ const indexSwiper = new Swiper('.hero-swiper', {
     },
 });
 
-const catalogueSwiper = new Swiper('.catalog-swiper', {
+const catalogueSwiper = new Swiper('.line-swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    speed: 1500,
+    speed: 5000,
+    slidesPerView: 6,
 
     // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
 
     // autoplay
-    /*autoplay: {
-        delay: 45000,
-    },*/
+    autoplay: {
+        delay: 10,
+    },
 
     // pagination
     /*pagination: {
