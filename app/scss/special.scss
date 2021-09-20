@@ -1,0 +1,124 @@
+.specialist {
+    margin-bottom: 136px;
+    position: relative;
+    &__headline {
+        position: absolute;
+        top: 60px;
+        left: -60px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transform: rotate(-90deg);
+        padding: 36px 0;
+        span {
+            text-transform: uppercase;
+            font-size: 40px;
+            line-height: 120%;
+            font-weight: 300;
+        }
+    }
+
+    &__container {
+        max-width: calc(100% - 124px);
+        margin-left: 124px;
+        padding: 0;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 368px);
+        gap: 3px;
+    }
+}
+.cards-special {
+    &__item {
+        padding: 70px 80px;
+        transition: ease-in-out 0.4s;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.item-special {
+    &_big {
+        grid-row: span 2;
+    }
+
+    &_one {
+        background-color: #96e9f9;
+    }
+
+    &_two {
+        background-color: #a3e07e;
+    }
+
+    &_three {
+        background-color: #fded84;
+    }
+
+    &__img {
+        margin-bottom: 72px;
+    }
+
+    &__content {
+        margin-bottom: 32px;
+        flex: 1 1 auto;
+        span {
+            font-size: 18px;
+            line-height: 24/18 * 100%;
+            font-weight: 500;
+            color: #565656;
+        }
+        p {
+            margin-top: 16px;
+            font-size: 32px;
+            line-height: 100%;
+            min-height: 40px;
+            max-height: 130px;
+            overflow: auto;
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        width: 164px;
+        height: 60px;
+        border: 1px solid #333333;
+        border-radius: 3px;
+        span {
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 24/16 * 100%;
+            font-weight: 500;
+            color: #333333;
+        }
+    }
+}
+
+.item-special_one:hover {
+    background-color: #50daf5;
+    .item-special__btn {
+        background-color: #333333;
+        span {
+            color: #fff;
+        }
+    }
+}
+.item-special_two:hover {
+    background-color: #71bd44;
+    .item-special__btn {
+        background-color: #333333;
+        span {
+            color: #fff;
+        }
+    }
+}
+.item-special_three:hover {
+    background-color: #ffdd00;
+    .item-special__btn {
+        background-color: #333333;
+        span {
+            color: #fff;
+        }
+    }
+}
