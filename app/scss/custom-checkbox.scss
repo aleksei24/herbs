@@ -36,11 +36,11 @@
 }
 
 .checkbox__box:checked + .checkbox__span::after {
-    width: 20px;
+    width: 30px;
 }
 
 .checkbox__box:checked + .checkbox__span::before {
-    width: 10px;
+    width: 15px;
 }
 
 .checkbox__box:checked ~ .checkbox__text {
@@ -53,8 +53,8 @@
 }
 
 .checkbox__span {
-    width: 18px;
-    height: 18px;
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     border: 1px solid #e6d7bd;
     display: block;
@@ -76,19 +76,18 @@
 }
 
 .checkbox__span::before {
-    top: 57%;
-    left: 3px;
+    top: 55%;
+    left: 11px;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .checkbox__span::after {
-    top: 35%;
-    right: 4px;
+    top: 43%;
+    right: 12px;
     transform: translate(50%, -50%) rotate(-45deg);
 }
 .checkbox__text {
     color: $colourFont;
-    // font-size: 12px;
-    @include response-font(12, 10);
-    line-height: 14/12 * 100%;
+    font-size: 18px;
+    line-height: 22/18 * 100%;
 }

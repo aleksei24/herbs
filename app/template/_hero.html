@@ -62,4 +62,72 @@
             </div>
         </div>
     </div>
+    <div class="msg-btn btn" id="msgBtn">
+        <span>обратная связь</span>
+    </div>
+    <div class="form-hero">
+        <div class="form-hero__container container">
+            <form action="#!" id="form-hero" class="form-hero__body">
+                <h1 class="form-hero__title">Обратная связь</h1>
+                <div class="form-hero__item">
+                    <label for="form-hero-name" class="form-hero__label">Ваше имя*:</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="form-hero-name"
+                        class="form-hero__input req"
+                        placeholder="Екатерина"
+                    />
+                </div>
+                <div class="form-hero__item">
+                    <label for="form-hero-phone" class="form-hero__label"></label>
+                    <input
+                        type="text"
+                        name="phone"
+                        id="form-hero-phone"
+                        class="form-hero__input req _phone"
+                        placeholder="Телефон*"
+                    />
+                </div>
+                <div class="form-hero__item">
+                    <label for="form-hero-email" class="form-hero__label"></label>
+                    <input
+                        type="text"
+                        name="email"
+                        id="form-hero-email"
+                        class="form-hero__input req _email"
+                        placeholder="E-mail"
+                    />
+                </div>
+                <div class="form-hero__item">
+                    <label for="form-hero-message" class="form-hero__label"></label>
+                    <textarea
+                        name="message"
+                        id="form-hero-message"
+                        class="form-hero__input"
+                        placeholder="Cообщение"
+                    ></textarea>
+                </div>
+                <div class="form-hero__check check">
+                    <label for="formAgreement" class="checkbox checkbox_border">
+                        <input
+                            type="checkbox"
+                            name="checkbox"
+                            id="formAgreement"
+                            class="checkbox__box check-hidden req"
+                            required
+                        />
+                        <span class="checkbox__span"></span>
+                        <span class="checkbox__text">
+                            Согласие на обработку персональных данных и с Политикой
+                            конфиденциальности
+                        </span>
+                    </label>
+                </div>
+                <button type="submit" class="form-hero__button">отправить</button>
+                <span class="form-hero__notice"> * Поля, обязательные для заполнения </span>
+            </form>
+        </div>
+        <div id="form-hero-close-btn"></div>
+    </div>
 </section>

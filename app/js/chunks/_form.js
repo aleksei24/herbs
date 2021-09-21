@@ -1,15 +1,9 @@
 // form
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('#form');
+    const form = document.querySelector('#form-hero');
     if (form) {
         const input = document.querySelectorAll('input');
         form.addEventListener('submit', formSend);
-
-        const formImage = document.querySelector('#form-image');
-        const formPreview = document.querySelector('.file__preview');
-        formImage.addEventListener('change', () => {
-            uploadFile(formImage.files[0]);
-        });
     }
 
     async function formSend(e) {
@@ -17,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
         let error = formValidate(form);
 
         let formData = new FormData();
-        formData.append('image', formImage.files[0]);
 
         if (error === 0) {
             let response = await fetch('sendmail.php', {
@@ -27,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
             if (response.ok) {
                 let result = await response.json();
                 alert(result.message);
-                formPreview.innerHTML = '';
                 form.reset();
             } else {
                 alert('Error');
@@ -76,25 +68,15 @@ document.addEventListener('DOMContentLoaded', function () {
     function emailTest(input) {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
+});
 
-    function uploadFile(file) {
-        if (!['image/jpg', 'image/png', 'image/gif'].includes(file.type)) {
-            alert('Only images are allowed');
-            formImage.value = '';
-            return;
-        }
-        if (file.size > 2 * 1024 * 1024) {
-            alert('File must be less than 2MB');
-            return;
-        }
-
-        let showImage = new FileReader();
-        showImage.onload = (e) => {
-            formPreview.innerHTML = `<img src='${e.target.result}' alt='Image'`;
-        };
-        showImage.onerror = (e) => {
-            alert('Error');
-        };
-        showImage.readAsDataURL(file);
-    }
+const msgBtn = document.querySelector('#msgBtn');
+const formHero = document.querySelector('.form-hero');
+const formHeroCloseBtn = document.querySelector('#form-hero-close-btn');
+msgBtn.addEventListener('click', () => {
+    console.log('feedback form is displayed');
+    formHero.classList.add('active');
+});
+formHeroCloseBtn.addEventListener('click', () => {
+    formHero.classList.remove('active');
 });
