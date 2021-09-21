@@ -1,6 +1,9 @@
 .catalogue {
     margin-bottom: 136px;
     position: relative;
+    @media (max-width: $md2) {
+        margin-bottom: 100px;
+    }
     &__headline {
         position: absolute;
         top: 105px;
@@ -8,11 +11,20 @@
         overflow: auto;
         transform: rotate(-90deg);
         padding: 36px 0;
+        @media (max-width: $md2) {
+            padding: 16px 0;
+            top: 90px;
+            left: -90px;
+        }
         span {
             text-transform: uppercase;
             font-size: 40px;
             line-height: 48/40 * 100%;
             font-weight: 300;
+            @media (max-width: $md2) {
+                font-size: 30px;
+                line-height: 36/30 * 100%;
+            }
         }
     }
 
@@ -20,9 +32,10 @@
         max-width: calc(100% - 124px);
         margin-left: 124px;
         padding: 0;
-    }
-
-    &__cards {
+        @media (max-width: $md2) {
+            max-width: calc(100% - 68px);
+            margin-left: 68px;
+        }
     }
 }
 .cards-catalogue {
@@ -33,9 +46,13 @@
         position: relative;
         min-height: 360px;
         height: 368px;
-        // padding: 64px 200px 64px 84px;
         padding: 64px 84px;
         transition: ease 0.4s;
+        @media (max-width: $md2) {
+            padding: 46px 43px;
+            height: 276px;
+            min-height: 270px;
+        }
     }
 }
 .item-catalogue {
@@ -54,6 +71,9 @@
 
     &__descript {
         max-width: 570px;
+        @media (max-width: $md2) {
+            max-width: 470px;
+        }
     }
 
     &__img {
@@ -61,6 +81,9 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-25%);
+        @media (max-width: $md2) {
+            width: 404px;
+        }
     }
 
     &__link {
@@ -73,27 +96,49 @@
         background-color: transparent;
         border: 1px solid $colourFont;
         border-radius: 3px;
+        @media (max-width: $md2) {
+            width: 136px;
+            height: 46px;
+        }
         span {
             color: $colourFont;
             font-size: 16px;
             line-height: 24/16 * 100%;
             font-weight: 500;
             text-transform: uppercase;
+            @media (max-width: $md2) {
+                font-size: 14px;
+                line-height: 18/14 * 100%;
+            }
         }
     }
 }
 .descript-catalogue {
+    &__img {
+        @media (max-width: $md2) {
+            width: 62px;
+            height: 62px;
+        }
+    }
     &__title {
         margin: 24px 0;
         font-size: 48px;
         line-height: 100%;
         font-weight: 700;
+        @media (max-width: $md2) {
+            font-size: 36px;
+            margin: 18px 0;
+        }
     }
 
     &__text {
         font-size: 22px;
         line-height: 30/22 * 100%;
         font-weight: 300;
+        @media (max-width: $md2) {
+            font-size: 18px;
+            line-height: 24/18 * 100%;
+        }
     }
 }
 

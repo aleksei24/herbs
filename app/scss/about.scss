@@ -1,6 +1,7 @@
 .about {
     margin: 136px 0;
-    &__container {
+    @media (max-width: $md2) {
+        margin: 100px 0;
     }
 
     &__headline {
@@ -9,6 +10,11 @@
         line-height: 64/56 * 100%;
         font-weight: 500;
         margin-bottom: 48px;
+        @media (max-width: $md2) {
+            font-size: 42px;
+            line-height: 48/42 * 100%;
+            margin-bottom: 35px;
+        }
     }
 
     &__content {
@@ -19,11 +25,18 @@
 }
 .content-about {
     &__adv {
-        flex: 0 0 510px;
+        flex: 0 1 510px;
+        margin-right: 15px;
+        @media (max-width: $md2) {
+            // flex: 0 0 380px;
+        }
     }
 
     &__descript {
-        flex: 0 0 860px;
+        flex: 0 1 860px;
+        @media (max-width: $md2) {
+            flex: 0 0 725px;
+        }
     }
 }
 .adv-about {
@@ -34,14 +47,25 @@
     &__between {
         margin: 9px 0;
         padding-left: 8.3%;
+        @media (max-width: $md2) {
+            height: 52px;
+            padding-left: 31px;
+        }
     }
 }
 .item-adv {
     &__img {
         margin-right: 44px;
+        @media (max-width: $md2) {
+            margin-right: 32px;
+        }
         img {
             height: 84px;
             width: 84px;
+            @media (max-width: $md2) {
+                height: 62px;
+                width: 62px;
+            }
         }
     }
 
@@ -50,6 +74,9 @@
         line-height: 100%;
         font-weight: 500;
         max-width: 380px;
+        @media (max-width: $md2) {
+            font-size: 24px;
+        }
     }
 }
 .descript-about {
@@ -58,6 +85,11 @@
         line-height: 36/28 * 100%;
         font-weight: 300;
         margin-bottom: 40px;
+        @media (max-width: $md2) {
+            font-size: 22px;
+            line-height: 28/22 * 100%;
+            margin-bottom: 32px;
+        }
     }
 
     &_text2 {
@@ -65,16 +97,29 @@
         line-height: 30/22 * 100%;
         font-weight: 300;
         margin-bottom: 40px;
+        @media (max-width: $md2) {
+            font-size: 18px;
+            line-height: 24/18 * 100%;
+            margin-bottom: 32px;
+        }
     }
 
     &__btn {
         width: 157px;
         height: 60px;
+        @media (max-width: $md2) {
+            width: 130px;
+            height: 46px;
+        }
         span {
             text-transform: uppercase;
             font-size: 16px;
             line-height: 24/16 * 100%;
             font-weight: 500;
+            @media (max-width: $md2) {
+                font-size: 14px;
+                line-height: 18/14 * 100%;
+            }
         }
     }
 }

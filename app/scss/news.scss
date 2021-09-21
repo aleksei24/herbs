@@ -1,5 +1,8 @@
 .news {
     margin-bottom: 136px;
+    @media (max-width: $md2) {
+        margin-bottom: 100px;
+    }
 
     &__title {
         text-align: left;
@@ -8,18 +11,30 @@
         line-height: 64/56 * 100%;
         font-weight: 500;
         text-transform: uppercase;
+        @media (max-width: $md2) {
+            margin-bottom: 35px;
+            font-size: 42px;
+            line-height: 48/42 * 100%;
+        }
     }
 
     &__row {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -30px;
+        @media (max-width: $md2) {
+            margin: 0 -17px;
+        }
     }
 
     &__column {
         display: flex;
         padding: 0 18px;
         flex: 0 1 33%;
+        @media (max-width: $md2) {
+            padding: 0 17px;
+            flex: 1 1 33%;
+        }
     }
 
     &__item {
@@ -31,6 +46,9 @@
 
     &__img {
         margin-bottom: 36px;
+        @media (max-width: $md2) {
+            margin-bottom: 28px;
+        }
     }
 
     &__headline {
@@ -38,6 +56,9 @@
         font-size: 32px;
         line-height: 100%;
         font-weight: 500;
+        @media (max-width: $md2) {
+            font-size: 24px;
+        }
     }
 
     &__label {
@@ -46,6 +67,11 @@
         font-size: 18px;
         line-height: 24/18 * 100%;
         font-weight: 500;
+        @media (max-width: $md2) {
+            font-size: 14px;
+            line-height: 18/14 * 100%;
+            margin-bottom: 14px;
+        }
     }
 
     &__text {
@@ -53,5 +79,9 @@
         line-height: 30/22 * 100%;
         font-weight: 300;
         flex: 1 1 auto;
+        @media (max-width: $md2) {
+            font-size: 18px;
+            line-height: 24/18 * 100%;
+        }
     }
 }

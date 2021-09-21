@@ -1,13 +1,23 @@
 .header {
-    min-height: 120px;
-    height: 100%;
+    height: 120px;
+    max-height: 100%;
     padding: 41px 0;
     transition: ease 0.4s;
+    @media (max-width: $md2) {
+        padding: 30px 0;
+        height: 90px;
+    }
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    &__logo {
+        @media (max-width: $md2) {
+            height: 41px;
+        }
     }
 
     &_fixed {
@@ -26,6 +36,9 @@
         align-items: center;
         justify-content: space-between;
         min-width: 285px;
+        @media (max-width: $md2) {
+            min-width: 250px;
+        }
     }
 }
 .nav {
@@ -34,6 +47,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: $md2) {
+            width: 658px;
+        }
     }
 
     &__link {
@@ -41,6 +57,10 @@
         font-size: 18px;
         line-height: 32/18 * 100%;
         font-family: $secondFont;
+        @media (max-width: $md2) {
+            font-size: 17px;
+            line-height: 24/17 * 100%;
+        }
     }
 }
 .aux {
@@ -52,6 +72,10 @@
         font-size: 24px;
         line-height: 32/24 * 100%;
         font-family: $secondFont;
+        @media (max-width: $md2) {
+            font-size: 20px;
+            line-height: 24/20 * 100%;
+        }
     }
 
     &__search {

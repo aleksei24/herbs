@@ -124,6 +124,9 @@ button {
     height: auto;
     margin: 0 auto;
     padding: 0 13px;
+    @media (max-width: $md2) {
+        max-width: 1240px;
+    }
 }
 
 .ibg {
