@@ -16,6 +16,11 @@
             top: 90px;
             left: -90px;
         }
+        @media (max-width: $md4) {
+            padding: 9px 0;
+            left: -82px;
+            top: 82px;
+        }
         span {
             text-transform: uppercase;
             font-size: 40px;
@@ -24,6 +29,10 @@
             @media (max-width: $md2) {
                 font-size: 30px;
                 line-height: 36/30 * 100%;
+            }
+            @media (max-width: $md4) {
+                font-size: 26px;
+                line-height: 32/26 * 100%;
             }
         }
     }
@@ -35,6 +44,10 @@
         @media (max-width: $md2) {
             max-width: calc(100% - 68px);
             margin-left: 68px;
+        }
+        @media (max-width: $md4) {
+            margin-left: 52px;
+            max-width: calc(100% - 52px);
         }
     }
 }
@@ -74,6 +87,9 @@
         @media (max-width: $md2) {
             max-width: 470px;
         }
+        @media (max-width: $md4) {
+            max-width: 330px;
+        }
     }
 
     &__img {
@@ -87,6 +103,10 @@
         @media (max-width: $md3) {
             width: 339px;
             transform: translateX(-5%);
+        }
+        @media (max-width: $md4) {
+            width: 321px;
+            transform: translateX(-30%);
         }
     }
 
@@ -136,6 +156,10 @@
             font-size: 36px;
             margin: 18px 0;
         }
+        @media (max-width: $md4) {
+            font-size: 30px;
+            line-height: 36/30 * 100%;
+        }
     }
 
     &__text {
@@ -145,6 +169,10 @@
         @media (max-width: $md2) {
             font-size: 18px;
             line-height: 24/18 * 100%;
+        }
+        @media (max-width: $md4) {
+            font-size: 17px;
+            line-height: 24/17 * 100%;
         }
     }
 }

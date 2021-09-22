@@ -49,7 +49,7 @@ body {
     background-color: $bgColour;
     font-family: $fontFamily;
     color: $colourFont;
-    &.lock {
+    &.locked {
         overflow: hidden;
     }
 }

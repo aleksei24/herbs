@@ -27,4 +27,7 @@
 }
 .swiper-wrapper-partners {
     height: 186px;
+    @media (max-width: $md4) {
+        height: 140px;
+    }
 }

@@ -61,6 +61,10 @@
     flex-shrink: 0;
     margin-right: 12px;
     position: relative;
+    @media (max-width: $md4) {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .checkbox__span::before,
@@ -68,7 +72,7 @@
     content: '';
     width: 0;
     height: 2px;
-    background-color: $colourFont;
+    background-color: $btnBgColour;
     display: block;
     position: absolute;
     border-radius: 5px;
@@ -77,17 +81,21 @@
 
 .checkbox__span::before {
     top: 55%;
-    left: 11px;
+    left: 6px;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .checkbox__span::after {
-    top: 43%;
-    right: 12px;
+    top: 38%;
+    right: 7px;
     transform: translate(50%, -50%) rotate(-45deg);
 }
 .checkbox__text {
     color: $colourFont;
     font-size: 18px;
     line-height: 22/18 * 100%;
+    @media (max-width: $md4) {
+        font-size: 14px;
+        line-height: 18/14 * 100%;
+    }
 }

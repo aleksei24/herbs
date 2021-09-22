@@ -34,20 +34,8 @@ const catalogueSwiper = new Swiper('.line-swiper', {
     speed: 5000,
     slidesPerView: 6,
 
-    // Navigation arrows
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
-
     // autoplay
     autoplay: {
         delay: 10,
     },
-
-    // pagination
-    /*pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-    },*/
 });

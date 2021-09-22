@@ -3,6 +3,9 @@
     @media (max-width: $md2) {
         margin-bottom: 100px;
     }
+    @media (max-width: $md4) {
+        margin-bottom: 94px;
+    }
 
     &__title {
         text-align: left;
@@ -15,6 +18,11 @@
             margin-bottom: 35px;
             font-size: 42px;
             line-height: 48/42 * 100%;
+        }
+        @media (max-width: $md4) {
+            font-size: 37px;
+            line-height: 44/37 * 100%;
+            margin-bottom: 32px;
         }
     }
 
@@ -59,6 +67,9 @@
         @media (max-width: $md2) {
             font-size: 24px;
         }
+        @media (max-width: $md4) {
+            font-size: 22px;
+        }
     }
 
     &__label {
@@ -82,6 +93,10 @@
         @media (max-width: $md2) {
             font-size: 18px;
             line-height: 24/18 * 100%;
+        }
+        @media (max-width: $md4) {
+            font-size: 17px;
+            line-height: 24/17 * 100%;
         }
     }
 }
