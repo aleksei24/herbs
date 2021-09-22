@@ -44,6 +44,9 @@
         @media (max-width: $md2) {
             margin-left: 99px;
         }
+        @media (max-width: $md3) {
+            margin-left: 20px;
+        }
     }
 
     &__img {
@@ -54,6 +57,9 @@
         max-width: 100%;
         @media (max-width: $md2) {
             width: 737px;
+        }
+        @media (max-width: $md3) {
+            width: 709px;
         }
     }
 }
