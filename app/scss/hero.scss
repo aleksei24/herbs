@@ -8,6 +8,9 @@
     @media (max-width: $md4) {
         min-height: 572px;
     }
+    @media (max-width: $md5) {
+        min-height: 450px;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -30,6 +33,9 @@
             max-width: 1440px;
             height: 572px;
         }
+        @media (max-width: $md5) {
+            height: 534px;
+        }
     }
 
     &__content {
@@ -40,6 +46,9 @@
         justify-content: space-between;
         @media (max-width: $md2) {
             height: 572px;
+        }
+        @media (max-width: $md5) {
+            height: 534px;
         }
     }
 }
@@ -73,6 +82,9 @@
         }
         @media (max-width: $md4) {
             width: 578px;
+        }
+        @media (max-width: $md5) {
+            display: none;
         }
     }
 }
@@ -119,6 +131,9 @@
         @media (max-width: $md4) {
             font-size: 17px;
             line-height: 24/17 * 100%;
+        }
+        @media (max-width: $md5) {
+            font-size: 17px;
         }
     }
 
@@ -169,6 +184,12 @@
     width: 204px;
     height: 60px;
     margin-left: 190px;
+    @media (max-width: $md5) {
+        bottom: 320px;
+        margin-left: 55px;
+        width: 152px;
+        height: 40px;
+    }
 }
 .hero-swiper__bullets span {
     width: 60px;
@@ -180,6 +201,10 @@
     line-height: 32px;
     font-size: 18px;
     transition: 0.5s;
+    @media (max-width: $md5) {
+        width: 40px;
+        height: 40px;
+    }
 }
 .swiper-pagination-bullet {
     color: $colourFont;
@@ -188,20 +213,11 @@
 .swiper-pagination-bullet-active {
     color: #fff;
     background-image: url(../img/hero/page.png);
-    // background-color: #50daf5;
-    // border-radius: 13px;
     transform: scale(1.05);
-    // clip-path: polygon(
-    //     33% 9%,
-    //     86% 41%,
-    //     91% 49%,
-    //     88% 57%,
-    //     34% 91%,
-    //     23% 91%,
-    //     16% 86%,
-    //     16% 14%,
-    //     24% 9%
-    // );
+    @media (max-width: $md5) {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 .msg-btn {
