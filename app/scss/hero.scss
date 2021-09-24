@@ -233,6 +233,9 @@
         width: 142px;
         height: 36px;
     }
+    @media (max-width: $md5) {
+        transform: rotate(-90deg) translateX(0) translateY(-250%);
+    }
     span {
         font-size: 16px;
         line-height: 24/16 * 100%;

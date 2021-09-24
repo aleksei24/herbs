@@ -39,3 +39,11 @@ const catalogueSwiper = new Swiper('.line-swiper', {
         delay: 10,
     },
 });
+
+const newsSwiper = new Swiper('.news-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    speed: 1500,
+    slidesPerView: 2,
+});
