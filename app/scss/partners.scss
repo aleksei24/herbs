@@ -3,6 +3,9 @@
     @media (max-width: $md2) {
         margin-bottom: 80px;
     }
+    @media (max-width: $md5) {
+        margin-bottom: 66px;
+    }
     &__container {
         max-width: 100vw;
     }
@@ -19,6 +22,9 @@
         @media (max-width: $md2) {
             height: 140px;
         }
+        @media (max-width: $md5) {
+            height: 85px;
+        }
     }
     &__img:hover {
         transition: ease-in-out 0.4s;
@@ -26,8 +32,11 @@
     }
 }
 .swiper-wrapper-partners {
-    height: 186px;
-    @media (max-width: $md4) {
-        height: 140px;
-    }
+    height: 0px;
+    // @media (max-width: $md4) {
+    //     height: 140px;
+    // }
+    // @media (max-width: $md5) {
+    //     height: 120px;
+    // }
 }

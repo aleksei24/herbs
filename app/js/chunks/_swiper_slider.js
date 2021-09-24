@@ -46,4 +46,8 @@ const newsSwiper = new Swiper('.news-swiper', {
     loop: true,
     speed: 1500,
     slidesPerView: 2,
+    navigation: {
+        nextEl: '.news-btn-next',
+        prevEl: '.news-btn-prev',
+    },
 });
