@@ -229,12 +229,23 @@
     transform: rotate(-90deg) translateX(50%) translateY(-250%);
     background-color: #f9931f;
     z-index: 4;
+    img {
+        display: none;
+        @media (max-width: $md6) {
+            display: block;
+        }
+    }
     @media (max-width: $md2) {
         width: 142px;
         height: 36px;
     }
     @media (max-width: $md5) {
         transform: rotate(-90deg) translateX(0) translateY(-250%);
+    }
+    @media (max-width: $md6) {
+        width: 44px;
+        height: 40px;
+        transform: rotate(0) translateX(-100%) translateY(0);
     }
     span {
         font-size: 16px;
@@ -244,6 +255,10 @@
         @media (max-width: $md2) {
             font-size: 14px;
             line-height: 17/14 * 100%;
+        }
+        @media (max-width: $md6) {
+            display: none;
+            font-size: 0;
         }
     }
 }

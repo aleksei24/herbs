@@ -92,10 +92,16 @@
             font-size: 20px;
             line-height: 24/20 * 100%;
         }
+        @media (max-width: $md6) {
+            display: none;
+        }
     }
     &__link-icon {
         display: none;
         font-size: 0;
+        @media (max-width: $md6) {
+            display: block;
+        }
     }
 
     &__search {

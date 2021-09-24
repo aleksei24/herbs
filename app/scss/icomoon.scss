@@ -19,3 +19,17 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-c-arrow:before {
+    content: '\e900';
+}
+.icon-phone:before {
+    content: '\e901';
+    font-size: 24px;
+    color: #ef4d9c;
+}
+.icon-search:before {
+    content: '\e902';
+    font-size: 24px;
+    color: #ef4d9c;
+}
